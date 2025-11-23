@@ -4,13 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Denis Cabello | Portfolio</title>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  
   <style>
     body {
       margin: 0;
@@ -27,8 +21,6 @@
       position: sticky;
       top: 0;
       z-index: 10;
-      /* Mejora opcional: borde para destacar la cabecera al hacer scroll */
-      border-bottom: 1px solid #1a1a1a; 
     }
     header a {
       color: #e0e0e0;
@@ -38,17 +30,6 @@
     }
     header a:hover {
       color: #6ab0ff;
-    }
-    /* Estilo para el logo si se convierte en enlace */
-    .logo a {
-        color: #e0e0e0;
-        text-decoration: none;
-        font-weight: bold; /* Opcional: hacer el logo más prominente */
-        font-size: 1.2rem;
-        margin: 0; /* Eliminar el margen extra de 'header a' si aplica */
-    }
-    .logo a:hover {
-        color: #6ab0ff;
     }
     .hero {
       height: 90vh;
@@ -122,7 +103,7 @@
 <body>
 
 <header>
-  <div class="logo"><a href="#">Denis Cabello</a></div>
+  <div class="logo">Denis Cabello</div>
   <nav>
     <a href="#about">Sobre mí</a>
     <a href="#skills">Habilidades</a>
@@ -130,3 +111,61 @@
     <a href="#contact">Contacto</a>
   </nav>
 </header>
+
+<section class="hero">
+  <h1>Hola, soy Denis 👋</h1>
+  <p>Estudiante de Ciencias de la Computación, enfocado en desarrollo backend, bases de datos y resolución de problemas.</p>
+  <div class="btns">
+    <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    <a href="#"><i class="fa-solid fa-file"></i> Descargar CV</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2>Sobre mí</h2>
+  <p>Soy estudiante de Ciencias de la Computación con experiencia en SQL, C++, autómatas y diseño de bases de datos. Me interesa construir soluciones eficientes y aprender nuevas tecnologías. Busco oportunidades para aplicar mis conocimientos en proyectos reales.</p>
+</section>
+
+<section id="skills">
+  <h2>Habilidades</h2>
+  <div class="skills-grid">
+    <div class="card">SQL (MySQL / PostgreSQL)</div>
+    <div class="card">C++</div>
+    <div class="card">HTML / CSS / JS</div>
+    <div class="card">Diseño de Bases de Datos</div>
+    <div class="card">Estructuras Discretas</div>
+    <div class="card">Git & GitHub</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Proyectos Destacados</h2>
+  <div class="projects-grid">
+    <div class="card">
+      <h3>EcoAventura (Scratch)</h3>
+      <p>Juego educativo sobre reciclaje para niños.</p>
+    </div>
+    <div class="card">
+      <h3>Automata de Pila en C++</h3>
+      <p>Implementación de un PDA según especificación formal.</p>
+    </div>
+    <div class="card">
+      <h3>Gestor de Productos</h3>
+      <p>Sistema CRUD integrado con MySQL.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contacto</h2>
+  <p>Email: <strong>den.cabello1@gmail.com</strong></p>
+  <p>LinkedIn y GitHub disponibles arriba.</p>
+</section>
+
+<footer>
+  © 2025 Denis Cabello — Portfolio en GitHub Pages
+</footer>
+
+</body>
+</html>
